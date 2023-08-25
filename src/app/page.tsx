@@ -38,9 +38,20 @@ export default async function Home() {
         <a href="#nuvem" className="absolute bottom-4 text-my cursor-pointer"><ChevronDownIcon className="h-8 w-8" /></a>
       </header>
       <main>
-        
+        <section className="w-full mt-4 flex justify-center items-center">
+          <div className="max-w-7xl">
+            <div className="flex flex-col justify-center items-center gap-2">
+            <h4 className="bg-white rounded flex gap-2 items-center text-center py-1 px-2 my_shadow">
+              <img src="./images/logo.png" alt="Logo Facebook Api" className="w-8" />
+              <span className="text-my tracking-widest uppercase">Nuvem</span> 
+            </h4>
+              <h2 className="font-bold text-4xl">O caminho para Ánalises Mais Claras e Poderosas.</h2>
+              <p className="text-center text-gray-600">Te ajudamos a transformar dados preciosos de campanhas em insights que <br/>facilitam a tomada de decisões e a otimizção dos seus anúncios.</p>
+            </div>
+          </div>
+        </section>
       </main>
       <footer></footer>
     </>
   )
-}
+}6
