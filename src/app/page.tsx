@@ -227,26 +227,31 @@ export default async function Home() {
             </div>
           </div>
         </section>
-        <section className="w-full mt-4 flex justify-center items-center bg-gray-300">
+        <section className="w-full mt-10 flex justify-center items-center bg-gray-300">
           <div className="max-w-7xl flex flex-col relative justify-between mt-8">
-            <h2 className="font-semibold text-3xl text-center">
+            <h2 className="font-medium text-3xl text-center">
               Benefícios da Nuvem
             </h2>
             <div className="grid grid-cols-2 grid-rows-2 gap-10 mt-4">
-              <div className="rounded-xl bg-white flex flex-col justify-between items-start gap-2 p-4 w-96 h-96">
-                <h3 className="text-green-500 text-2xl">Google Sheets</h3>
+              <div className="rounded-3xl bg-white flex flex-col justify-center items-start gap-2 p-4 w-96 h-96">
+                <h3 className="text-green-500 text-2xl font-bold">Google Sheets</h3>
                 <p className="text-gray-600 md:text-lg">Integração facilitado com as planilhas do <span className="text-green-500">Google Sheets</span>. Com apenas 1 clique, transfira todos os dados para uma planilha</p>
               </div>
-              <div className="rounded-xl bg-white flex flex-col justify-between items-start gap-2 p-4 w-96 h-96">
-                <h3 className="text-my text-2xl">Facebook ADS</h3>
+              <div className="rounded-3xl bg-white flex flex-col justify-center items-start gap-2 p-4 w-96 h-96">
+                <h3 className="text-my text-2xl font-bold">Facebook ADS</h3>
                 <p className="text-gray-600 md:text-lg">Integração facilitado com as planilhas do <span className="text-green-500">Google Sheets</span>. Com apenas 1 clique, transfira todos os dados para uma planilha</p>
               </div>
-              <div className="rounded-xl bg-white flex flex-col justify-between items-start gap-2 p-4 w-96 h-96">
-                <h3 className="text-my text-2xl">Nuvem</h3>
+              <div className="rounded-3xl bg-white flex flex-col justify-center items-start gap-2 p-4 w-96 h-96">
+              <img
+                  src="./images/logo.png"
+                  alt="Logo Facebook Api"
+                  className="w-16"
+                />
+                <h3 className="text-my text-2xl font-bold">Nuvem</h3>
                 <p className="text-gray-600 md:text-lg">Integração facilitado com as planilhas do <span className="text-green-500">Google Sheets</span>. Com apenas 1 clique, transfira todos os dados para uma planilha</p>
               </div>
-              <div className="rounded-xl bg-my flex flex-col justify-center items-center gap-2 p-4 w-96 h-96">
-                <h3 className="text-white text-3xl uppercase">Exportações Ilimitadas</h3>
+              <div className="rounded-3xl bg-my flex flex-col justify-center items-center gap-2 p-4 w-96 h-96 grad-main">
+                <h3 className="text-white text-3xl uppercase text-center font-bold">Exportações Ilimitadas</h3>
               </div>
             </div>
           </div>
