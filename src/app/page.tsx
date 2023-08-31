@@ -15,7 +15,7 @@ import {
 } from "@heroicons/react/24/outline";
 import HeroFlex from "@/components/HeroFlex";
 import Card from "@/components/Card";
-import MySwiper from "@/components/MySwiper";
+// import MySwiper from "@/components/MySwiper";
 
 export default async function Home() {
   return (
@@ -258,7 +258,7 @@ export default async function Home() {
               >
                 <p className="text-gray-600 md:text-lg">Chega de plataformas com bugs e que te limitam. Exportação facilitada de todas as métricas que quiser e sempre que squiser.</p>
               </Card>
-              <MySwiper />
+              {/* <MySwiper /> */}
             </div>
           </div>
         </section>
