@@ -15,6 +15,7 @@ import {
 } from "@heroicons/react/24/outline";
 import HeroFlex from "@/components/HeroFlex";
 import Card from "@/components/Card";
+import FAQ from "@/components/FAQ";
 // import MySwiper from "@/components/MySwiper";
 
 export default async function Home() {
@@ -306,6 +307,12 @@ export default async function Home() {
                 </p>
               </div>
             </div>
+          </div>
+        </section>
+        <section className="w-full mt-4 flex justify-center items-center">
+          <div className="max-w-7xl w-full flex flex-col items-center gap-2">
+           <h3 className="text-3xl tracking-[12px] text-center">FAQ</h3>
+            <FAQ />
           </div>
         </section>
       </main>
