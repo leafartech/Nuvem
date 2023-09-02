@@ -10,7 +10,7 @@ interface CriarProps {}
 export default function Criar({}: CriarProps) {
 
   const [fields, setFields] = useState({
-    fullName: "",
+    name: "",
     email: "",
     password: "",
   });
@@ -38,7 +38,7 @@ export default function Criar({}: CriarProps) {
           "Content-Type": "application/json"
         },
         body: JSON.stringify({
-          fullName: fields.fullName,
+          name: fields.name,
           email: fields.email,
           password: fields.password
         })
@@ -52,7 +52,7 @@ export default function Criar({}: CriarProps) {
 
         setErrorMessage("")
         setFormSubmitting(false)
-        localStorage.setItem("train-system", fields.fullName)
+        localStorage.setItem("train-system", fields.name)
         router.push("/")
 
       }).catch(e => console.log(e))
@@ -81,11 +81,11 @@ export default function Criar({}: CriarProps) {
       <img src="../../images/bg1.png" alt="Imagem" className="h-[800px]" />
 
       <form className="max-w-xl w-full rounded-md p-4 bg-white flex flex-col gap-6 my_shadow" onSubmit={e => formSubmited(e)}>
-        {errorMessage && <span className="text-red-500 text-center">{errorMessage}</span>}
         <h2 className="text-my font-bold text-2xl text-center">Criar Conta</h2>
+        {errorMessage && <span className="text-red-500 text-center">{errorMessage}</span>}
         <div className="w-full flex flex-col justify-between items-start">
-          <label className="text-my font-medium" htmlFor="full-name">Nome Completo</label>
-          <input id="full-name" type="text" name="fullName" onChange={handleChangeInputs} className="text-gray-600 outline-none placeholder:text-gray-300 w-full rounded border-b border-zinc-300 p-1  focus:border-zinc-500" placeholder="Digite seu nome completo..." required />
+          <label className="text-my font-medium" htmlFor="full-name">Nome</label>
+          <input id="full-name" type="text" name="name" onChange={handleChangeInputs} className="text-gray-600 outline-none placeholder:text-gray-300 w-full rounded border-b border-zinc-300 p-1  focus:border-zinc-500" placeholder="Digite seu nome completo..." required />
         </div>
         <div className="w-full flex flex-col justify-start">
           <label className="text-my font-medium" htmlFor="email">Email</label>
